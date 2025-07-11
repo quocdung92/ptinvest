@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Invest - Dịch vụ tư vấn chứng khoán</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="fixed w-full z-30 top-0 glassmorphism">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Site branding -->
+                <div class="shrink-0 mr-4">
+                    <a href="#" class="flex items-center">
+                        <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        <span class="ml-2 text-xl font-bold">PT Invest</span>
+                    </a>
+                </div>
+
+                <!-- Desktop navigation -->
+                <nav class="hidden md:flex md:grow">
+                    <ul class="flex grow justify-end flex-wrap items-center">
+                        <li><a href="#features" class="text-gray-300 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Dịch vụ</a></li>
+                        <li><a href="#pricing" class="text-gray-300 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Gói dịch vụ</a></li>
+                        <li><a href="#testimonials" class="text-gray-300 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Đánh giá</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Liên hệ</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <li><a href="#features" class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Dịch vụ</a></li>
+                <li><a href="#pricing" class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Dịch vụ</a></li>
+                <li><a href="#testimonials" class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Đánh giá</a></li>
+                <li><a href="#contact" class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Liên hệ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="grow">
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-12 md:pt-40 md:pb-20">
+            <!-- Background animation -->
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-black overflow-hidden">
+                <div class="absolute inset-0 opacity-20">
+                    <div class="absolute w-96 h-96 bg-purple-600 rounded-full -top-32 -left-32 animate-pulse"></div>
+                    <div class="absolute w-96 h-96 bg-blue-600 rounded-full -bottom-32 -right-32 animate-pulse delay-500"></div>
+                </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 relative">
+                <div class="text-center pb-12 md:pb-16">
+                    <h1 class="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4">
+                        Khởi đầu <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">hành trình đầu tư</span> của bạn
+                    </h1>
+                    <div class="max-w-3xl mx-auto">
+                        <p class="text-xl text-gray-400 mb-8">PT Invest cung cấp các chiến lược và công cụ bạn cần để xây dựng, phát triển và tối ưu hóa danh mục đầu tư. Hãy tập trung vào mục tiêu của bạn, chúng tôi sẽ lo phần còn lại.</p>
+                        <div class="flex flex-wrap justify-center gap-4">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfC0FneysrbGapzIaM7mlZnZR5GRCB6ZYyd4yirRiXAMV4Smg/viewform?usp=header" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out">
+        Bắt đầu ngay
+    </a>
+    <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out">
+        Tìm hiểu thêm
+    </a>
+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-12 md:py-20 bg-gray-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold">Dịch vụ được thiết kế cho thành công</h2>
+                    <p class="text-lg text-gray-400 mt-2">Mọi thứ bạn cần để tối ưu hóa lợi nhuận.</p>
+                </div>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Feature 1 -->
+                    <div class="text-center p-6 bg-gray-900 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-500">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-purple-500 mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Phân tích nhanh chóng</h3>
+                        <p class="text-gray-400">Hệ thống của chúng tôi được tối ưu hóa để cung cấp các phân tích và cập nhật thị trường nhanh nhất.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="text-center p-6 bg-gray-900 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-500">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-500 mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Bảo mật & Tin cậy</h3>
+                        <p class="text-gray-400">Chúng tôi ưu tiên bảo mật trong mọi chiến lược tư vấn, đảm bảo an toàn cho khoản đầu tư của bạn.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="text-center p-6 bg-gray-900 rounded-lg shadow-lg transform hover:-translate-y-2 transition duration-500">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-green-500 mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m0 18a9 9 0 009-9m-9 9a9 9 0 00-9-9"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Thị trường toàn cầu</h3>
+                        <p class="text-gray-400">Tiếp cận các cơ hội đầu tư trên toàn thế giới để đa dạng hóa danh mục và tối ưu lợi nhuận.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-12 md:py-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold">Dịch vụ linh hoạt cho mọi Nhà đầu tư</h2>
+                    <p class="text-lg text-gray-400 mt-2">Chọn gói dịch vụ phù hợp nhất với bạn.</p>
+                </div>
+                <div class="grid gap-8 lg:grid-cols-3">
+                    <!-- Pricing Plan 1: Starter -->
+                    <div class="border border-gray-700 rounded-lg p-8 flex flex-col">
+                        <h3 class="text-2xl font-bold text-center mb-4">Gói "Báo động Cơ hội"</h3>
+                        <div class="text-center text-gray-400 mb-4">Dành cho nhà đầu tư có kinh nghiệp muốn chớp cơ hội mua vào cổ phiếu tốt khi có mức giá hấp dẫn</div>
+                        <div class="text-4xl font-extrabold text-center mb-6 mt-4">Liên hệ</div>
+                        <ul class="text-lg space-y-4 mb-8 grow">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Ưu tiên nhận khuyến nghị sớm nhất</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Báo cáo thị trường khi có thông tin đặc biệt</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Thông tin liên quan đến doanh nghiệp sớm nhất</li>
+                        </ul>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfC0FneysrbGapzIaM7mlZnZR5GRCB6ZYyd4yirRiXAMV4Smg/viewform?usp=header" class="w-full text-center bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">Chọn Gói</a>
+                    </div>
+                    <!-- Pricing Plan 2: Pro (Most Popular) -->
+                    <div class="border-2 border-purple-500 rounded-lg p-8 flex flex-col relative">
+                        <div class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                            <div class="bg-purple-500 text-white text-sm font-bold px-3 py-1 rounded-full">Phổ biến nhất</div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-center mb-4">Gói "30 phút/tuần"</h3>
+                        <div class="text-center text-gray-400 mb-4">Dành cho nhà đầu tư muốn được định hướng và giám sát định kỳ bởi chuyên gia PT Invest</div>
+                        <div class="text-4xl font-extrabold text-center mb-6 mt-4">Liên hệ</div>
+                        <ul class="text-lg space-y-4 mb-8 grow">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Mọi quyền lợi gói Cơ bản</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Tư vấn 1-1 hàng tuần</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Xây dựng danh mục đầu tư riêng biệt</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Giám sát và hỗ trợ thường xuyên</li>
+                        </ul>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfC0FneysrbGapzIaM7mlZnZR5GRCB6ZYyd4yirRiXAMV4Smg/viewform?usp=header" class="w-full text-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Chọn Gói</a>
+                    </div>
+                    <!-- Pricing Plan 3: Enterprise -->
+                    <div class="border border-gray-700 rounded-lg p-8 flex flex-col">
+                        <h3 class="text-2xl font-bold text-center mb-4">Gói</h3>
+                        <h3 class="text-2xl font-bold text-center mb-4">"Đầu tư thông minh"</h3>
+                        <div class="text-center text-gray-400 mb-4">Dành cho khách hàng VIP.</div>
+                        <div class="text-4xl font-extrabold text-center mb-6 mt-4">Liên hệ</div>
+                        <ul class="text-lg space-y-4 mb-8 grow">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Mọi quyền lợi PT Invest đang cung cấp</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Xây dựng danh mục đầu tư chọn lọc riêng biệt</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Báo cáo định kỳ</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Giám sát và hỗ trợ 1:1 </li>
+                        </ul>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfC0FneysrbGapzIaM7mlZnZR5GRCB6ZYyd4yirRiXAMV4Smg/viewform?usp=header" class="w-full text-center bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">Liên hệ Tư vấn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-12 md:py-20 bg-gray-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold">Được các nhà đầu tư tin cậy</h2>
+                </div>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                        <p class="text-gray-400 mb-4">"Trước khi biết đến PT Invest, tôi gần như là một tờ giấy trắng, đầu tư theo cảm tính và thua lỗ khá nhiều. Nhờ sự tư vấn tận tình, dễ hiểu của đội ngũ, tôi đã tự tin hơn, biết cách quản lý vốn và bắt đầu có những khoản lãi đầu tiên. Cảm ơn PT Invest rất nhiều!"</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/48x48/6366F1/FFFFFF?text=NA" alt="Avatar">
+                            <div>
+                                <div class="font-bold">Nguyễn Minh Đức</div>
+                                <div class="text-sm text-gray-500">Nhà đầu tư cá nhân</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                        <p class="text-gray-400 mb-4">"Thị trường luôn biến động, nhưng phương pháp phân tích của PT Invest thực sự sắc bén. Đội ngũ đã giúp tôi cơ cấu lại danh mục, loại bỏ những mã yếu và tập trung vào các cổ phiếu có tiềm năng tăng trưởng dài hạn. Kết quả vượt ngoài mong đợi"</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/48x48/10B981/FFFFFF?text=TB" alt="Avatar">
+                            <div>
+                                <div class="font-bold">Nguyễn Ngọc Hân</div>
+                                <div class="text-sm text-gray-500">Nhà đầu tư cá nhân</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                        <p class="text-gray-400 mb-4">"Điều tôi thích nhất ở PT Invest là sự hỗ trợ nhanh chóng và chuyên nghiệp. Mọi thắc mắc của tôi đều được giải đáp cặn kẽ. Tôi cảm thấy mình thực sự có một người đồng hành đáng tin cậy."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/48x48/3B82F6/FFFFFF?text=LC" alt="Avatar">
+                            <div>
+                                <div class="font-bold">Ngô Đức Thành</div>
+                                <div class="text-sm text-gray-500">Finance Head at Scoular Vietnam</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / CTA Section -->
+        <section id="contact" class="relative py-20 md:py-32">
+             <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-black"></div>
+             <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+                 <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Sẵn sàng để xây dựng danh mục đầu tư vượt trội?</h2>
+                 <p class="text-xl text-gray-400 mb-8">Hãy tham gia cùng hàng ngàn nhà đầu tư tin tưởng vào PT Invest để định hướng cho các quyết định của họ. Bắt đầu tư vấn ngay, không cần thẻ tín dụng.</p>
+                 <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full transition duration-300 ease-in-out text-lg">Bắt đầu tư vấn miễn phí</a>
+             </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="font-bold text-white mb-2">LIÊN HỆ</h3>
+                <p class="font-semibold">Team PT INVEST</p>
+                <p class="text-lg text-white font-bold mb-2">0938832628</p>
+                <p class="text-sm">Thứ 2 - CN: 8:30 - 16:30</p>
+                <a href="mailto:hello@ptinvest.com.vn" class="hover:text-white transition duration-150 ease-in-out">support@ptinvest.com.vn</a>
+                <div class="mt-4">
+                    <p class="font-semibold text-white">TP Hồ Chí Minh</p>
+                    <p class="text-sm">Masteri An Phú - 179 Xa lộ Hà Nội, Phường An Khánh, Thành phố Thủ Đức.</p>
+                </div>
+            
+    </div>
+    </div>
+    &copy; 2025 PT Invest. All Rights Reserved.
+    </div>
+
+    </footer>
+
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
