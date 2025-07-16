@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PT Invest - Dịch vụ tư vấn chứng khoán</title>
-
-    <link rel="icon" type="image/png" href="<link rel="icon" type="image/png" href="https://github.com/quocdung92/ptinvest/blob/0fde12f232cd16b8cebd337929de02533d70a559/favicon.png">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
@@ -277,59 +274,67 @@
     </style>
 </head>
 <body>
-    <!-- ========== BẮT ĐẦU PHẦN ĐĂNG KÝ CUỐI TRANG ========== -->
-    <section id="dang-ky" class="bg-gray-900 py-12 md:py-20">
+      <!-- ========== PHẦN ĐĂNG KÝ CUỐI TRANG - THEME XANH DƯƠNG ========== -->
+    <section id="dang-ky" class="bg-gray-900 py-16 md:py-24">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <h2 class="text-3xl font-extrabold text-white">Đăng ký nhận bảng tin tổng hợp định kỳ</h2>
-            <p class="mt-4 text-lg text-gray-400">Vui lòng điền thông tin và chọn dịch vụ đang quan tâm để nhận bảng tin tổng hợp.</p>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white">Đăng ký nhận bản tin tổng hợp định kỳ</h2>
+            <p class="mt-4 text-lg text-gray-400">Đừng bỏ lỡ những phân tích chuyên sâu và cơ hội đầu tư độc quyền. Đăng ký ngay để nhận thông tin sớm nhất.</p>
             
-            <!-- 
-              FORM GỬI DỮ LIỆU ĐẾN GOOGLE SHEETS
-              - action: Dán URL ứng dụng web của bạn vào đây.
-              - target: Trỏ đến iframe ẩn để không bị chuyển trang.
-            -->
             <form 
-                action="https://script.google.com/macros/s/AKfycbykIzZPqVRi5XIknNc_T5hvE8SBlH5kpxwLXu8V_ovd1vhRmnJ5CB1fA9lS3HuY2fkQ/exec" 
+                action="https://script.google.com/macros/s/AKfycbwzH9Pz08iONuLE4vGPHnZPHsAW1F7buc0JdrY_jb7IptW8aAm6UkOEB3e-s7Z4FY_krA/exec" 
                 method="POST" 
                 target="hidden_iframe"
-                onsubmit="this.submit(); setTimeout(() => { document.getElementById('success-message').style.display='block'; this.reset(); }, 1000); setTimeout(() => { document.getElementById('success-message').style.display='none'; }, 5000); return false;">
+                onsubmit="this.submit(); setTimeout(() => { document.getElementById('success-message-blue').style.display='block'; this.reset(); }, 1000); setTimeout(() => { document.getElementById('success-message-blue').style.display='none'; }, 5000); return false;">
                 
-                <div class="grid grid-cols-1 gap-y-6 mt-8 max-w-lg mx-auto">
-                    <!-- Họ và Tên -->
-                    <div>
-                        <label for="FullNameFooter" class="sr-only">Họ và Tên</label>
-                        <input type="text" name="FullName" id="FullNameFooter" required placeholder="Họ và Tên"
-                               class="w-full p-4 bg-gray-800 border border-gray-700 rounded-md text-white focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition">
+                <div class="grid grid-cols-1 gap-y-6 mt-10 max-w-lg mx-auto">
+                    <!-- Họ và Tên với Icon -->
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <input type="text" name="HoTen" id="HoTenFooter" required placeholder="Họ và Tên"
+                               class="w-full p-4 pl-11 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:border-blue-500 focus-ring-blue transition">
                     </div>
-                    <!-- Số điện thoại -->
-                    <div>
-                        <label for="PhoneFooter" class="sr-only">Số điện thoại</label>
-                        <input type="tel" name="Phone" id="PhoneFooter" required placeholder="Số điện thoại"
-                               class="w-full p-4 bg-gray-800 border border-gray-700 rounded-md text-white focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition">
+                    <!-- Số điện thoại với Icon -->
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                             <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                            </svg>
+                        </div>
+                        <input type="tel" name="SoDienThoai" id="SoDienThoaiFooter" required placeholder="Số điện thoại"
+                               class="w-full p-4 pl-11 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:border-blue-500 focus-ring-blue transition">
                     </div>
-                    <!-- Email -->
-                    <div>
-                        <label for="EmailFooter" class="sr-only">Email</label>
+                    <!-- Email với Icon -->
+                    <div class="relative">
+                         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                        </div>
                         <input type="email" name="Email" id="EmailFooter" required placeholder="Địa chỉ Email"
-                               class="w-full p-4 bg-gray-800 border border-gray-700 rounded-md text-white focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition">
+                               class="w-full p-4 pl-11 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:border-blue-500 focus-ring-blue transition">
                     </div>
                     
                     <!-- Dịch vụ quan tâm -->
-                    <div class="text-left">
+                    <div class="text-left pt-2">
                         <label class="text-base font-medium text-gray-300">Dịch vụ bạn đang quan tâm là gì?</label>
                         <fieldset class="mt-4">
                             <legend class="sr-only">Dịch vụ quan tâm</legend>
                             <div class="space-y-4">
                                 <div class="flex items-center">
-                                    <input id="service-1" name="ServiceInterest" type="radio" value='Gói "Báo động Cơ hội"' required class="h-4 w-4 text-purple-600 border-gray-500 focus:ring-purple-500">
+                                    <input id="service-1" name="GoiDichVu" type="radio" value='Gói "Báo động Cơ hội"' required class="h-4 w-4 text-blue-600 border-gray-500 focus:ring-blue-500">
                                     <label for="service-1" class="ml-3 block text-sm font-medium text-gray-200">Gói "Báo động Cơ hội"</label>
                                 </div>
                                 <div class="flex items-center">
-                                    <input id="service-2" name="ServiceInterest" type="radio" value='Gói "30 phút/tuần"' class="h-4 w-4 text-purple-600 border-gray-500 focus:ring-purple-500">
+                                    <input id="service-2" name="GoiDichVu" type="radio" value='Gói "30 phút/tuần"' class="h-4 w-4 text-blue-600 border-gray-500 focus:ring-blue-500">
                                     <label for="service-2" class="ml-3 block text-sm font-medium text-gray-200">Gói "30 phút/tuần"</label>
                                 </div>
                                 <div class="flex items-center">
-                                    <input id="service-3" name="ServiceInterest" type="radio" value='Gói "Đầu tư thông minh"' class="h-4 w-4 text-purple-600 border-gray-500 focus:ring-purple-500">
+                                    <input id="service-3" name="GoiDichVu" type="radio" value='Gói "Đầu tư thông minh"' class="h-4 w-4 text-blue-600 border-gray-500 focus:ring-blue-500">
                                     <label for="service-3" class="ml-3 block text-sm font-medium text-gray-200">Gói "Đầu tư thông minh"</label>
                                 </div>
                             </div>
@@ -339,11 +344,11 @@
                 
                 <div class="mt-8">
                     <button type="submit"
-                            class="w-full max-w-lg mx-auto bg-purple-600 text-white font-bold py-4 px-6 rounded-md hover:bg-purple-700 transition duration-300">
-                        Nhận bảng tin
+                            class="w-full max-w-lg mx-auto bg-blue-600 text-white font-bold py-4 px-6 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-blue-500 transition duration-300">
+                        Đăng Ký Ngay
                     </button>
                 </div>
-                <p id="success-message" style="display:none;" class="mt-4 text-green-400">Cảm ơn bạn đã đăng ký! Chúng tôi sẽ sớm liên hệ lại.</p>
+                <p id="success-message-blue" style="display:none;" class="mt-4 text-green-400">Cảm ơn bạn đã đăng ký! Chúng tôi sẽ sớm liên hệ lại.</p>
             </form>
         </div>
     </section>
