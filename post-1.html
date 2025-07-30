@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thay đổi tiêu đề này cho mỗi bài viết -->
+    <title>Tiêu đề bài viết - PT Invest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .post-content h2 {
+            font-size: 1.875rem; /* 30px */
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .post-content p {
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
+        }
+        .post-content ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="fixed w-full z-30 top-0 glassmorphism">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Site branding -->
+                <div class="shrink-0 mr-4">
+                    <!-- Thay đổi href thành đường dẫn trang chủ của bạn, ví dụ: "index.html" -->
+                    <a href="index.html" class="flex items-center">
+                        <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        <span class="ml-2 text-xl font-bold">PT Invest</span>
+                    </a>
+                </div>
+
+                <!-- Desktop navigation -->
+                <nav class="hidden md:flex md:grow">
+                    <ul class="flex grow justify-end flex-wrap items-center">
+                         <!-- Thay đổi href để trỏ về đúng section trên trang chủ -->
+                        <li><a href="index.html#features" class="text-gray-300 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Dịch vụ</a></li>
+                        <li><a href="index.html#pricing" class="text-gray-300 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Gói dịch vụ</a></li>
+                        <li><a href="index.html#blog" class="text-gray-300 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Blog</a></li>
+                        <li><a href="index.html#testimonials" class="text-gray-300 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Đánh giá</a></li>
+                        <li><a href="index.html#contact" class="text-gray-300 hover:text-white px-4 py-2 flex items-center transition duration-150 ease-in-out">Liên hệ</a></li>
+                    </ul>
+                </nav>
+
+                 <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <li><a href="index.html#features" class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Dịch vụ</a></li>
+                <li><a href="index.html#pricing" class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Gói dịch vụ</a></li>
+                <li><a href="index.html#blog" class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Blog</a></li>
+                <li><a href="index.html#testimonials" class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Đánh giá</a></li>
+                <li><a href="index.html#contact" class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-base font-medium">Liên hệ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="grow">
+        <!-- Article Section -->
+        <section class="relative pt-32 pb-12 md:pt-40 md:pb-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <article class="bg-gray-800 p-8 md:p-12 rounded-lg shadow-lg">
+                    <!-- Tiêu đề bài viết -->
+                    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-center">
+                        Xu hướng ngành công nghệ năm 2025: Đâu là cơ hội?
+                    </h1>
+                    <!-- Thông tin meta: Ngày đăng, tác giả -->
+                    <div class="text-center text-gray-400 mb-8">
+                        <span>Đăng ngày: 30 tháng 7, 2025</span>
+                    </div>
+
+                    <!-- Ảnh đại diện bài viết -->
+                    <img class="w-full h-auto object-cover rounded-lg mb-8" src="https://placehold.co/800x450/6366F1/FFFFFF?text=Bai+viet" alt="Tiêu đề bài viết">
+
+                    <!-- Nội dung bài viết -->
+                    <div class="prose prose-invert max-w-none text-lg text-gray-300 post-content">
+                        <p>Năm 2025 được dự báo sẽ là một năm bùng nổ của nhiều công nghệ đột phá, tạo ra những cơ hội đầu tư không thể bỏ lỡ. Đối với các nhà đầu tư, việc nắm bắt sớm các xu hướng này là chìa khóa để tối ưu hóa lợi nhuận và đi trước thị trường. Cùng PT Invest điểm qua những lĩnh vực công nghệ đáng chú ý nhất.</p>
+                        
+                        <h2>1. Trí tuệ nhân tạo tạo sinh (Generative AI)</h2>
+                        <p>Sau giai đoạn bùng nổ ban đầu, AI tạo sinh sẽ bước vào giai đoạn ứng dụng sâu rộng vào thực tế. Các doanh nghiệp tích hợp thành công AI vào quy trình vận hành, từ marketing, chăm sóc khách hàng đến R&D, sẽ có lợi thế cạnh tranh vượt trội. Các cổ phiếu đáng chú ý không chỉ là những gã khổng lồ công nghệ mà còn là các công ty cung cấp giải pháp AI chuyên biệt cho từng ngành.</p>
+
+                        <h2>2. Công nghệ Bán dẫn và Chip thế hệ mới</h2>
+                        <p>Nhu cầu về năng lực xử lý cho AI, xe tự lái và IoT sẽ tiếp tục thúc đẩy ngành công nghiệp bán dẫn. Các công ty chuyên về thiết kế chip (fabless) và các nhà máy sản xuất (foundries) với công nghệ tiến trình tiên tiến sẽ là tâm điểm. Đây là ngành có rào cản gia nhập cao và tiềm năng tăng trưởng bền vững.</p>
+                        
+                        <h2>3. An ninh mạng (Cybersecurity)</h2>
+                        <p>Khi mọi thứ đều được số hóa, rủi ro về an ninh mạng ngày càng tăng cao. Các doanh nghiệp và chính phủ sẽ phải chi tiêu nhiều hơn cho các giải pháp bảo mật. Các công ty cung cấp dịch vụ bảo mật đám mây, bảo mật điểm cuối và ứng dụng AI vào việc phát hiện mối đe dọa sẽ có nhiều cơ hội phát triển.</p>
+
+                        <p>Trên đây chỉ là một vài trong số rất nhiều xu hướng công nghệ đáng chú ý. Việc nghiên cứu kỹ lưỡng và lựa chọn đúng thời điểm giải ngân sẽ là yếu tố quyết định thành công của bạn. Hãy liên hệ với PT Invest để nhận được những phân tích sâu hơn và danh mục khuyến nghị chi tiết.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center">
+                 &copy; 2025 PT Invest. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
